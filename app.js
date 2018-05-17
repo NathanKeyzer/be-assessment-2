@@ -17,6 +17,14 @@ app.get('/ingelogd', function (req, res) {
   res.render('ingelogd');
 });
 
+app.get('/profiel', function (req, res) {
+  res.render('profiel');
+});
+
+app.get('/berichten', function (req, res) {
+  res.render('berichten');
+});
+
 app.listen(3000, function(){
   console.log('Listening on port 3000');
 });
