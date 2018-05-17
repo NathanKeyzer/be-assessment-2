@@ -6,9 +6,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
-  res.render('index')
-})
+  res.render('index');
+});
+
+app.get('/aanmelden', function (req, res) {
+  res.render('aanmelden');
+});
+
+app.get('/ingelogd', function (req, res) {
+  res.render('ingelogd');
+});
 
 app.listen(3000, function(){
   console.log('Listening on port 3000');
-})
+});
