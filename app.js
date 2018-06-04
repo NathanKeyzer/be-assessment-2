@@ -25,6 +25,14 @@ app.get('/berichten', function (req, res) {
   res.render('berichten');
 });
 
+app.get('/matches', function (req, res) {
+  res.render('matches');
+});
+
+app.get('/match', function (req, res) {
+  res.render('match');
+});
+
 // server luisterd op poort 3000
 app.listen(3000, function(){
   console.log('Listening on port 3000'); // bericht dat de server is gestart
