@@ -21,6 +21,10 @@ app.get('/profiel', function (req, res) {
   res.render('profiel');
 });
 
+app.get('/profiel-aanpassen', function (req, res) {
+  res.render('profiel-aanpassen');
+});
+
 app.get('/berichten', function (req, res) {
   res.render('berichten');
 });
