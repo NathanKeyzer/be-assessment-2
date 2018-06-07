@@ -11,19 +11,27 @@
   <a href="/"><button type="button" name="button">terug</button></a>
   <fieldset>
     <legend>Aanmelden:</legend>
-    <label for="">Profielfoto:</label><input type="file" name="" value="">
-    <label for="">Naam:</label><input type="text" name="name" value="">
+    <form action="/aanmelden" method="post">
+    <label for="">Profielfoto:</label><input type="file" name="profielfoto" value="">
+    <label for="">Naam:</label><input type="text" name="firstname" value="">
     <label for="">Achternaam:</label><input type="text" name="lastname" value="">
     <label for="">Leeftijd:</label><input type="text" name="age" value="">
-    <label for="">Geslacht:</label><input type="text" name="" value="">
-    <label for="">Woonplaats:</label><input type="text" name="" value="">
-    <label for="">Interesse in:</label><input type="text" name="" value="">
-  </fieldset>
-
-  <fieldset>
-    <label for="">Email:</label><input type="email" name="" value="">
-    <label for="">Wachtwoord:</label><input type="password" name="" value="">
-    <label for="">Herhaal Wachtwoord:</label><input type="password" name="" value="">
+    <label for="">Geslacht:</label>
+    <select class="" name="gender">
+      <option value="man">man</option>
+      <option value="vrouw">vrouw</option>
+    </select>
+    <label for="">Woonplaats:</label><input type="text" name="place" value="">
+    <label for="">Interesse in:</label>
+    <select class="" name="genderInterest">
+      <option value="man">man</option>
+      <option value="vrouw">vrouw</option>
+    </select>
+    <label for="">Email:</label><input type="email" name="email" value="">
+    <label for="">Wachtwoord:</label><input type="password" name="password" value="">
+    <label for="">Herhaal Wachtwoord:</label><input type="password" name="passwordConf" value="">
+    <button type="submit" name="button">submit</button>
+    </form>
   </fieldset>
 
   <fieldset>

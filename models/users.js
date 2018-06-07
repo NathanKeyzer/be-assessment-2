@@ -20,6 +20,10 @@ var UserSchema = new mongoose.Schema({
   passwordConf: {
     type: String,
     required: true,
+  },
+  leeftijd:{
+    type: Number,
+    
   }
 });
 var User = mongoose.model('User', UserSchema);
