@@ -1,6 +1,9 @@
 var express = require('express')
 var app = express()
 var path = require('path')
+var db = require('./models/index')
+var user = require('./models/users')
+var bodyParser = require('body-parser')
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
