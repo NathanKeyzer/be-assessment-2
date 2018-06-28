@@ -8,13 +8,14 @@
 <main>
   <h1>Dating website</h1>
   <a href="https://placeholder.com"><img src="http://via.placeholder.com/488x350"></a>
-    <form class="" action="index.html" method="post">
 
       <fieldset>
         <legend>Inloggen</legend>
-        <label for="">E-mail:</label><input type="email" name="username" value="" placeholder="username">
-        <label for="">Wachtwoord:</label><input type="password" name="password" value="" placeholder="password">
-        <a href="/ingelogd"><button type="button" name="button">Login</button></a>
+        <form action="/login" method="post">
+        <label for="">E-mail:</label><input type="text" name="firstname" value="" class="form-control" placeholder="firstname" required autofocus>
+        <label for="">Wachtwoord:</label><input type="password" name="password" value="" class="form-control" placeholder="password" required>
+        <button type="submit" name="button">Login</button>
+        </form>
       </fieldset>
 
       <fieldset>
@@ -28,7 +29,6 @@
         <a href="/aanmelden"><button type="button" name="button">Aanmelden</button></a>
       </fieldset>
 
-    </form>
 </main>
 </body>
 </html>
