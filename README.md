@@ -7,7 +7,7 @@
 * [Requirements](#requirements)
 
 ## Overview
-For this project i had to maken a server that connects with a database. 
+For this project i had to make a server that connects with a database. Therefore i have to work with nodejs.
 
 ## Server
 The server that i have made is a node server with express. To setup this server i used an example.
@@ -19,7 +19,7 @@ npm --save
 To start the server```nodemon app.js```
 
 ### Database
-For setting up the database i used mongodb. Mongo db is a no-sql database. I had a problem with the setup of mongodb my macOs version is to low to install mongodb via homebrew so i had to pick another tool to make a database, therefore is used an online tool called mLab. To make this database work i had to work with mongoose.
+For setting up the database i used mongodb. Mongo db is a no-sql database. I had a problem with the setup of mongodb my macOs version is to old to install mongodb via homebrew so i had to pick another tool to make a database, therefore is used an online tool called mLab. To make this database work i had to work with mongoose.
 
 ```
 DB_URL=mongodb://dbuser:dbpassword@ds147440.mlab.com:47440/dbname
@@ -29,7 +29,7 @@ DB_URL=mongodb://dbuser:dbpassword@ds147440.mlab.com:47440/dbname
 To fill this database i have made a form where the user can fill in there.
 
 | user id | gender | Age | Interest |
-| - |
+| ------- | ------ | --- | -------- |
 | Nathan| Man | 25 | Woman |
 | Test | Woman | 23 | Man |
 | hallo | Woman | 24 | Unknown |
