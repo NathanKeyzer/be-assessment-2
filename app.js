@@ -98,17 +98,17 @@ app.post('/login', function(req, res){
 	var password = req.body.password;
 
 	User.findOne({naam: firstname, wachtwoord: password}, function(err, user) {
-			if(err){
-				console.log(err);
-				return res.status(500).send();
-			}
+		if(err){
+			console.log(err);
+			return res.status(500).send();
+		}
 
-			if(!user){
-				return res.status(404).send();
-			}
+		if(!user){
+			return res.status(404).send();
+		}
 
-			// return res.status(200).send();
-			return res.redirect('/ingelogd')
+		// return res.status(200).send();
+		return res.redirect('/ingelogd')
 	})
 });
 
